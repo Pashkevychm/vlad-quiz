@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+body {
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+    background-color: rgb(39, 144, 84);
+}
+
+.screen{ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.hide {
+    display: none;
+}
+
+#answers-container {
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+.answer-btn {
+    padding: 18px;
+    border-radius: 4px;
+    background-color:burlywood;
+    border: 2px solid blue;
+    color: black;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.answer-btn:not(:disabled):hover {
+    background-color: rbg(28, 152, 193);
+    transform: scale(1.1);
+}
+
+.correct {
+    background-color: darkgoldenrod;
+}
+
+.wrong {
+    background-color: crimson;
+}
+
+.start-btn {
+    padding: 18px;
+    background-color: powderblue;
+    border: 2px solid purple;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.start-btn:hover {
+    border: 2px solid purple;
+}
